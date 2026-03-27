@@ -1,0 +1,25 @@
+{
+  "name": "recetas-de-la-abuela",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapariciofern/Recetas-de-la-abuela.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sapariciofern/Recetas-de-la-abuela/issues"
+  },
+  "homepage": "https://github.com/sapariciofern/Recetas-de-la-abuela#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}

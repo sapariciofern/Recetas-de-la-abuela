@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
+  "browserslist": [
+    "last 10 years",
+    "not dead"
+  ], 
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",

@@ -1,4 +1,669 @@
-h1 {
-  color: rgb(201, 49, 49);
-  font-family: cursive;
+:root {
+  --color-principal: #FDF6E3;
+  --color-letra: #333333;
+  --color-secundario: #C0392B;
+  --color-blanco: #FFFFFF;
+  --color-gris-claro: #C9C9C9;
+
+  --font-letra: "Merriweather", serif;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  color: var(--color-letra);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-principal);
+  font-family: var(--font-letra);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid var(--color-secundario);
+  margin-bottom: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  font-size: 1rem;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-title h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--color-letra);
+  transition: color 0.3s ease;
+  font-size: 1.2rem; 
+  border: 2px solid transparent; 
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav a.active {
+  color: var(--color-secundario);
+  border-bottom: 2px solid var(--color-secundario);
+  padding-bottom: 2px;
+}
+
+.nav a:hover {
+  border-color: var(--color-secundario); 
+}
+
+.container-imagen{
+  width: 95%;
+  margin: 0 auto 1rem auto;
+}
+
+
+.banner {
+  background-image: url('../img/Mix_ingredientes.png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0.5rem;
+  text-align: center;
+  color: var(--color-blanco);
+}
+
+.banner-texto h2 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  
+  text-decoration-color: var(--color--blanco);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.banner-texto p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.boton-recetas {
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.explore h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration-line: underline;
+  margin-bottom: 1rem;
+}
+
+.explore ul.grid-cards {
+  margin: 1rem 1rem;
+  list-style-type: none;
+}
+
+.explore ul.grid-cards li {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  background-color: transparent; 
+  border-radius: 1rem;
+
+  border: 2px solid var(--color-gris-claro); 
+  text-align: center; 
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25); 
+}
+
+.explore ul.grid-cards li a {
+  display: block; 
+  font-size: 1.2rem; 
+  margin-top: 0.5rem; 
+  margin-bottom: 0.5rem; 
+  color: var(--color-letra);
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-gris-claro);
+}
+
+.explore ul.grid-cards li a:hover {
+  color: var(--color-secundario);
+  font-weight: 600;
+}
+
+.explore ul.grid-cards li img {
+  width: 100%;
+  height: 160px;      
+  object-fit: cover;  
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: block;
+}
+
+.explore ul.grid-cards li p {
+  font-size: 1rem;
+  text-align: left;
+  padding: 0rem 1rem;
+  
+}
+
+.categoria-titulo {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-secundario);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.enlaces {
+  padding: 1rem 1rem;
+}
+
+
+.enlaces h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--color-secundario);
+}
+
+.enlaces ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.enlaces ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-letra);
+}
+
+.enlaces a {
+  color: var(--color-letra);
+  text-decoration: none;
+}
+
+.enlaces a:hover {
+  text-decoration: underline;
+  color: var(--color-secundario)
+}
+
+.enlaces p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-letra);
+}
+
+.filtro-comunidades {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  align-items: center;   
+}
+
+.filtro-comunidades label, 
+.receta-informacion label{
+  font-size: 1rem;
+  color: var(--color-letra);
+}
+
+.filtro-comunidades select, 
+.receta-informacion select {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-secundario);
+  background-color: white;
+  color: var(--color-letra);
+  cursor: pointer;
+  width: 60%; 
+}
+
+.filtro-comunidades select:hover, 
+.receta-informacion select:hover {
+  border: 2px solid var(--color-secundario);
+}
+
+#btnLimpiar, 
+#btnPersonas, 
+.mensaje-personas, 
+.ingredientes-recalculados {
+  display: none; 
+}
+
+.filtro-comunidades button, 
+.receta-informacion button {
+  color: var(--color-secundario);
+  border: none;
+  border-bottom: 1px solid var(--color-secundario);
+  background-color: var(--color-principal);
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.filtro-comunidades button:hover, 
+.receta-informacion button:hover {
+  background-color: var(--color-secundario-oscuro);
+}
+
+.receta-imagen-principal {
+  width: 100%;
+  height: auto;    
+  margin: 0 auto;   
+  overflow: hidden; 
+  border-radius: 1rem;
+  margin: 1rem 0; 
+}
+
+.receta-imagen-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.receta-informacion {
+  margin-bottom: 1rem;
+}
+
+.receta-informacion h4, 
+.receta-video h4,
+.receta-preparacion h4 {
+  color: var(--color-secundario);
+  margin-top: 0.5rem;
+}
+
+.receta-informacion ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.calculadora-personas {
+  margin-top: 0.5rem;
+}
+
+.receta-detalle {
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+}
+
+.receta-preparacion p {
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.7rem;
+  line-height: 1;
+}
+
+.receta-preparacion img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.video {
+  width: 70%;
+  max-width: 800px;
+  margin: 1rem auto 3rem auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1rem;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+  }
+
+  .header {
+    flex-direction: row;      
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    padding-top: 1rem;
+  }
+
+  .logo-title {
+    flex-direction: row;   
+    gap: 1.2rem;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo-title h1, 
+  .banner-texto h2,
+  .explore h2 {
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+
+  .container-imagen {
+    margin: 0 auto 3rem auto;
+  }
+
+  .banner {
+    padding: 4rem 1rem;
+  }
+
+  .banner-texto p {
+    font-size: 1.2rem;
+  }
+
+  .boton-recetas{
+    padding: 0.4rem 0.8rem;
+  }
+
+  .explore ul.grid-cards {
+    margin: 1rem 1.5rem;
+  }
+
+  .explore ul.grid-cards li a {
+    display: block; 
+    font-size: 1rem;
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+  }
+
+  .filtro-comunidades {
+    flex-direction: row;      
+    justify-content: center;  
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .filtro-comunidades select {
+    width: 180px;             
+  }
+
+  .receta-imagen-principal {
+    width: 80%;
+    height: auto;    
+    margin: 0 auto;   
+    overflow: hidden; 
+    border-radius: 1rem;    
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .receta-informacion,
+  .receta-preparacion,
+  .receta-video {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .receta-preparacion img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logo-title h1,
+  .banner-texto h2 {
+    font-size: 2rem;
+  }
+
+  .nav a,
+  .explore ul.grid-cards li a {
+    font-size: 1.3rem;
+  }
+
+   .explore ul.grid-cards li p {
+    font-size: 1rem;
+  }
+
+  .container-imagen {
+    margin: 0 auto 3rem auto;
+  }
+
+  .banner {
+    padding: 4rem 1rem;
+  }
+
+  .banner-texto p {
+    font-size: 1.5rem;
+  }
+
+  .boton-recetas{
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .explore h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .explore ul.grid-cards {
+    margin: 2rem 5rem;
+  }
+
+  .receta-imagen-principal {
+    width: 70%;
+    height: auto;   
+    margin: 0 auto;   
+    overflow: hidden; 
+    border-radius: 1rem;    
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .receta-informacion,
+  .receta-preparacion,
+  .receta-video {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .receta-preparacion img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: 1700px) {
+
+  .logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo-title h1,
+  .banner-texto h2 {
+    font-size: 2.5rem;
+  }
+
+  .nav a,
+  .explore ul.grid-cards li a {
+    font-size: 2rem;
+  }
+
+  .receta-detalle, 
+  .calculadora-personas label {
+    font-size: 1.6rem;
+  }
+
+  .filtro-comunidades label {
+    font-size: 1.3rem;
+  }
+
+  .explore ul.grid-cards li p {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
+
+  .container-imagen {
+    margin: 0 auto 3rem auto;
+  }
+
+  .banner {
+    padding: 6rem 1rem;
+  }
+
+  .banner-texto p, 
+  .categoria-titulo {
+    font-size: 2rem;
+  }
+
+  .boton-recetas{
+    font-size: 1.5rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .explore h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .explore ul.grid-cards {
+    margin: 2rem 5rem;
+  }
+
+  .explore ul.grid-cards li p,
+  .receta-informacion button {
+    font-size: 1.6rem;
+  }
+
+  .calculadora-personas select {
+    font-size: 1.2rem;
+  }
+
+  .receta-imagen-principal {
+    width: 50%;
+    height: auto;   
+    margin: 0 auto;   
+    overflow: hidden; 
+    border-radius: 1rem;    
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .receta-informacion,
+  .receta-preparacion,
+  .receta-video, .enlaces {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .receta-preparacion img {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .enlaces h3 {
+    font-size: 2rem;
+  }
+
+  .enlaces ul li, 
+  .enlaces p {
+    font-size: 1.5rem;
+  }
+
+
 }

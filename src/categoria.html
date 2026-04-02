@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recetas de la abuela: Explora la gastronomía española"
+    />
+    <title>Recetas de la abuela</title>
+    <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
+
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script type="module" src="/src/js/app.js"></script>
+  </head>
+
+  <body>
+    <header class="header container-fluid">
+      <div class="logo-title">
+        <h1>Recetas de la abuela</h1>
+        <a href="index.html">
+          <img
+            src="img/Logo_Web.png"
+            alt="Recetas de la abuela Inicio"
+            class="logo"
+          />
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categoria.html" class="active">Categorías</a></li>
+          <li><a href="links.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <div class="container-fluid">
+        <h2 class="categoria-titulo">Recetas tradicionales de cada región</h2>
+      </div>
+
+      <div class="filtro-comunidades">
+        <label>Filtrar por Comunidad Autónoma:</label>
+        <select id="comunidad_autonoma">
+          <option value="">Seleccionar...</option>
+          <option value="Andalucía">Andalucía</option>
+          <option value="Aragón">Aragón</option>
+          <option value="Asturias">Asturias</option>
+          <option value="Baleares">Baleares</option>
+          <option value="Canarias">Canarias</option>
+          <option value="Cantabria">Cantabria</option>
+          <option value="CastillaLa Mancha">Castilla La Mancha</option>
+          <option value="Castilla y León">Castilla y León</option>
+          <option value="Cataluña">Cataluña</option>
+          <option value="Extremadura">Extremadura</option>
+          <option value="Galicia">Galicia</option>
+          <option value="La Rioja">La Rioja</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Murcia">Murcia</option>
+          <option value="Navarra">Navarra</option>
+          <option value="País Vasco">País Vasco</option>
+          <option value="Valencia">Valencia</option>
+        </select>
+
+        <button id="btnLimpiar">Limpiar filtro</button>
+      </div>
+
+      <section class="explore">
+        <div class="container">
+          <ul class="grid-cards">
+
+            <li data-lugar="Valencia">
+              <img
+                src="img/Paella_Valenciana.jpg"
+                alt=""
+                width="256"
+                height="256"
+              />
+              <a href="det2.html"><strong>Paella Valenciana</strong></a>
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Valencia</p>
+              <p>🍽 Raciones: 12</p>
+            </li>
+
+            <li data-lugar="País Vasco">
+              <img
+                src="img/Marmitako.jpg"
+                alt="Marmitako"
+                width="256"
+                height="256"
+              />
+              <a href="det1.html"><strong>Marmitako</strong></a>
+              <p>⏰ Tiempo: 30m</p>
+              <p>🎚 Dificultad: Facil</p>
+              <p>📍 Lugar: País Vasco</p>
+              <p>🍽 Raciones: 6</p>
+            </li>
+
+            <li data-lugar="Madrid">
+              <img
+                src="img/Cocido_madrileño.jpg"
+                alt=""
+                width="256"
+                height="256"
+              />
+              <a href="det1.html"><strong>Cocido Madrileño</strong></a>
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Madrid</p>
+              <p>🍽 Raciones: 6</p>
+            </li>
+
+            <li data-lugar="Galicia">
+              <img
+                src="img/Pulpo_Gallega.jpg"
+                alt="Pulpo a la Gallega"
+                width="256"
+                height="256"
+              />
+              <a href="det2.html"><strong>Pulpo a la Gallega</strong></a>
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Galicia</p>
+              <p>🍽 Raciones: 4</p>
+            </li>
+
+            <li data-lugar="Andalucía">
+              <img
+                src="img/Salmorejo.jpg"
+                alt="Salmorejo Cordobés"
+                width="256"
+                height="256"
+              />
+              <a href="det1.html"><strong>Salmorejo Cordobés</strong></a>
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Andalucía</p>
+              <p>🍽 Raciones: 4</p>
+            </li>
+
+            <li data-lugar="Castilla y León">
+              <img
+                src="img/Cordero_Asado.jpg"
+                alt="Cordero Asado"
+                width="256"
+                height="256"
+              />
+              <a href="det2.html"><strong>Cordero Asado</strong></a>
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Castilla y León</p>
+              <p>🍽 Raciones: 4</p>
+            </li>
+
+            <li data-lugar="Cantabria">
+              <img
+                src="img/Quesada_Pasiega.jpg"
+                alt="Quesada Pasiega"
+                width="256"
+                height="256"
+              />
+              <a href="det1.html"><strong>Quesada Pasiega</strong></a>
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Cantabria</p>
+              <p>🍽 Raciones: 4</p>
+            </li>
+
+            <li data-lugar="Canarias">
+              <img
+                src="img/Papas_Arrugadas.jpg"
+                alt="Papas Arrugadas con Mojo"
+                width="256"
+                height="256"
+              />
+              <a href="det2.html"
+                ><strong>Papas Arrugadas con Mojo</strong></a
+              >
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Canarias</p>
+              <p>🍽 Raciones: 4</p>
+            </li>
+
+            <li data-lugar="Madrid">
+              <img
+                src="img/Huevos_Rotos.jpg"
+                alt="Huevos Rotos con Jamón"
+                width="256"
+                height="256"
+              />
+              <a href="det2.html"
+                ><strong>Huevos Rotos con Jamón</strong></a
+              >
+              <p>⏰ Tiempo: 1h 25m</p>
+              <p>🎚 Dificultad: Media</p>
+              <p>📍 Lugar: Madrid</p>
+              <p>🍽 Raciones: 4</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container-fluid">
+      <p>© 2026 Recetas de la abuela</p>
+    </footer>
+  </body>
+</html>

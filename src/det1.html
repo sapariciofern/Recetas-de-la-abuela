@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recetas de la abuela: Explora la gastronomía española"
+    />
+    <title>Recetas de la abuela</title>
+    <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
+
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script type="module" src="/src/js/app.js"></script>
+  </head>
+
+  <body>
+    <header class="header container-fluid">
+      <div class="logo-title">
+        <h1>Recetas de la abuela</h1>
+        <a href="index.html">
+          <img
+            src="img/Logo_Web.png"
+            alt="Recetas de la abuela Inicio"
+            class="logo"
+          />
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categoria.html">Categorías</a></li>
+          <li><a href="links.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido" class="container">
+      <div class="container-fluid">
+        <h2 class="categoria-titulo animate__animated animate__zoomIn">
+          Marmitako
+        </h2>
+      </div>
+
+      <article class="receta-detalle container">
+        <div class="receta-imagen-principal animate__animated animate__zoomIn">
+          <img
+            src="img/Marmitako.jpg"
+            alt="Marmitako"
+            width="400"
+            height="300"
+          />
+        </div>
+
+        <div class="receta-informacion">
+          <h4>Tiempo de preparación ⏰</h4>
+          <p>30 minutos</p>
+
+          <h4>Raciones 🍽️</h4>
+          <p>6 personas</p>
+
+          <h4>Dificultad 🕒</h4>
+          <p>Media</p>
+
+          <h4>Lugar de origen 📍</h4>
+          <p>País Vasco, España</p>
+        </div>
+
+        <div class="receta-informacion">
+          <h4 id="personas-originales">Ingredientes para 6 personas</h4>
+          <ul id="ingredientes-originales">
+            <li data-cantidad="1000" data-tipo="g">Bonito — 1000 g</li>
+            <li data-cantidad="5" data-tipo="unidad">Patatas — 5</li>
+            <li data-cantidad="1" data-tipo="unidad">Cebolla — 1</li>
+            <li data-cantidad="2" data-tipo="unidad">Pimiento verde italiano — 2</li>
+            <li data-cantidad="1" data-tipo="unidad">Zanahoria — 1</li>
+            <li data-cantidad="2" data-tipo="unidad">Dientes de ajo — 2</li>
+            <li data-cantidad="1000" data-tipo="ml">Caldo de pescado — 1000 ml</li>
+            <li data-cantidad="200" data-tipo="ml">Vino blanco — 200 ml</li>
+            <li data-cantidad="15" data-tipo="g">Pimentón dulce — 15 g</li>
+            <li data-cantidad="1" data-tipo="unidad">Guindilla — 1</li>
+            <li data-cantidad="30" data-tipo="g">Salsa de tomate — 30 g</li>
+          </ul>
+
+          <div class="calculadora-personas">
+            <label for="personas">Calcular ingredientes para:</label>
+            <select id="personas">
+              <option value="0">Selecciona personas</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6 personas</option>
+              <option value="7">7 personas</option>
+              <option value="8">8 personas</option>
+              <option value="9">9 personas</option>
+              <option value="10">10 personas</option>
+            </select>
+          </div>
+
+          <h4 id="mensaje-personas" class="mensaje-personas">
+            El número de personas seleccionado es el mismo que el de la receta
+            original.
+          </h4>
+
+          <h4 id="ingredientes-recalculados" class="ingredientes-recalculados">
+            Ingredientes recalculados
+          </h4>
+
+          <ul id="ingredientes-calculados"></ul>
+
+          <button id="btnPersonas">Limpiar filtro</button>
+        </div>
+
+        <div class="receta-preparacion">
+          <h4>Preparación</h4>
+
+          <p>
+            Comenzaremos picando la cebolla en juliana, el pimiento en tiras
+            de mediano tamaño, para que se vean, y el ajo muy picado. En una
+            cazuela grande y ancha, que nos permita remover los ingredientes,
+            ponemos un poco de aceite y en él, salteamos la cebolla, el
+            pimiento y el ajo. Bajamos el gas al mínimo, y añadimos la
+            zanahoria, bien picada. Dejamos pochar los ingredientes para que
+            se ablanden bien.
+          </p>
+
+          <p>
+            Ponemos el pimiento choricero en agua caliente, y sacamos su carne
+            con el canto de una cuchara. También podemos utilizar la carne de
+            pimiento choricero en conserva, que da un excelente resultado y
+            resulta muy cómoda de utilizar. La incorporamos al sofrito junto a
+            la guindilla y removemos bien.
+          </p>
+
+          <img
+            src="img/Marmitako_1.jpg"
+            alt="Marmitako"
+            width="400"
+            height="300"
+          />
+
+          <p>
+            Añadimos el vino blanco, y dejamos que evapore el alcohol. Pelamos
+            las patatas y las cortamos en cachelos, desgajando un poco con el
+            cuchillo para que los pedazos suelten más fécula, lo cual hará que
+            el caldo resultante engorde un poco. Añadimos las patatas al
+            guiso, junto a una punta de cuchillo de pimentón, y un buen
+            pellizco de sal.
+          </p>
+
+          <img
+            src="img/Marmitako_2.jpg"
+            alt="Marmitako"
+            width="400"
+            height="300"
+          />
+
+          <p>
+            Subimos el gas a fuego fuerte e incorporamos el caldo, las hojas
+            de laurel y las dos cucharadas de tomate, removemos un poco y
+            soltamos la cuchara. Si se desea, se puede poner una ramita de
+            perejil a cocer que después retiraremos. Una vez que el caldo
+            comience a hervir, bajamos de nuevo el gas al mínimo. A partir de
+            ahora removeremos solamente agitando las asas de la cacerola. De
+            esta manera, las patatas permanecerán enteras.
+          </p>
+
+          <img
+            src="img/Marmitako_3.jpg"
+            alt="Marmitako"
+            width="400"
+            height="300"
+          />
+          <p>
+            Dejamos a fuego lento durante unos treinta minutos, hasta que las
+            patatas casi se deshagan, y aprovechamos ese tiempo para repasar
+            los tacos de bonito, cortándolos en trozos de bocado, y retirando
+            alguna espina que puedan tener. Pasados los treinta minutos,
+            añadimos el bonito a la cazuela, apagamos el fuego y dejamos que
+            las tajadas se hagan con el calor residual. Servimos tras cinco
+            minutos de reposo.
+          </p>
+
+          
+          <img
+            src="img/Marmitako_4.png"
+            alt="Marmitako"
+            width="400"
+            height="300"
+          />
+        </div>
+
+        <div class="receta-video">
+          <h4>Video de la elaboración</h4>
+
+          <div class="video">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mLZc-47JJWc?si=I4tt-7l64YrMv_jC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer container-fluid">
+      <p>© 2026 Recetas de la abuela</p>
+    </footer>
+  </body>
+</html>

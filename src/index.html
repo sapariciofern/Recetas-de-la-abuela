@@ -8,7 +8,9 @@
       content="Recetas de la abuela: Explora la gastronomía española"
     />
     <title>Recetas de la abuela</title>
-    <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
+
+    <link rel="icon" href="img/Logo_Web.svg" type="image/svg+xml">
+    <link rel="icon" href="img/Logo_Web.png" type="image/png" />
 
     <link rel="stylesheet" href="/src/css/styles.css" />
     <script type="module" src="/src/js/app.js"></script>
@@ -16,18 +18,28 @@
 
   <body>
     <header class="header container-fluid">
+
       <div class="logo-title">
         <h1>Recetas de la abuela</h1>
+
         <a href="index.html">
-          <img
-            src="img/Logo_Web.png"
-            alt="Recetas de la abuela Inicio"
-            class="logo"
-          />
+
+          <picture>
+            <source srcset="img/img-optimizadas/Logo_Web.webp 1x, 
+                            img/img-optimizadas/Logo_Web@2x.webp 2x" 
+                            type="image/webp">
+            <img
+              src="img/Logo_Web.png"
+              srcset="img/Logo_Web.png 1x, img/Logo_Web@2x.png 2x"
+              alt="Inicio - Recetas de la abuela"
+              class="logo"
+            />
+          </picture>
+
         </a>
       </div>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html" class="active">Inicio</a></li>
           <li><a href="categoria.html">Categorías</a></li>
@@ -37,6 +49,8 @@
     </header>
 
     <main id="contenido" class="container">
+
+      <!-- ⭐ BANNER CON CLIP-PATH -->
       <section class="container-imagen banner">
         <div class="banner-texto">
           <h2>Explora la gastronomía peninsular</h2>
@@ -47,24 +61,62 @@
         </div>
       </section>
 
+      <div class="svg-wrapper">
+        <svg class="svg-vapor" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+          <!-- Palo recto -->
+          <path d="M60 10 L60 80"
+                stroke="#C0392B"
+                stroke-width="4"
+                fill="none"
+                stroke-linecap="round"/>
+
+          <!-- Punta intermedia -->
+          <path d="M50 60 L60 85 L70 60"
+                stroke="#C0392B"
+                stroke-width="4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+
       <section class="explore">
         <div class="container">
           <h2>Recetas destacadas</h2>
 
-          <ul
-            class="grid-cards"
-            
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1200"
-          >
+          <ul class="grid-cards">
+
             <li data-lugar="Valencia">
-              <img
-                src="img/Paella_valenciana.jpg"
-                alt=""
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Paella_valenciana-400.avif 400w,
+                    img/img-width/Paella_valenciana-600.avif 600w,
+                    img/img-width/Paella_valenciana-800.avif 800w,
+                    img/img-width/Paella_valenciana-1200.avif 1200w
+                  type="image/avif"
+                >
+
+                <img 
+                  src="img/Paella_valenciana.jpg"
+                  srcset="
+                    img/Paella_valenciana.jpg 400w,
+                    img/Paella_valenciana.jpg 600w,
+                    img/Paella_valenciana.jpg 800w,
+                    img/Paella_valenciana.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Paella Valenciana"
+                >
+              </picture>
+
               <a href="det2.html"><strong>Paella Valenciana</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
@@ -73,32 +125,78 @@
             </li>
 
             <li data-lugar="País Vasco">
-              <img
-                src="img/Marmitako.jpg"
-                alt="Marmitako"
-                width="256"
-                height="256"
-              />
+
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Marmitako-400.avif 400w,
+                    img/img-width/Marmitako-600.avif 600w,
+                    img/img-width/Marmitako-800.avif 800w,
+                    img/img-width/Marmitako-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Marmitako.jpg"
+                  srcset="
+                    img/Marmitako.jpg 400w,
+                    img/Marmitako.jpg 600w,
+                    img/Marmitako.jpg 800w,
+                    img/Marmitako.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Marmitako"
+                >
+              </picture>
+
               <a href="det1.html"><strong>Marmitako</strong></a>
               <p>⏰ Tiempo: 30m</p>
-              <p>🎚 Dificultad: Facil</p>
+              <p>🎚 Dificultad: Fácil</p>
               <p>📍 Lugar: País Vasco</p>
               <p>🍽 Raciones: 6</p>
             </li>
 
             <li data-lugar="Madrid">
-              <img
-                src="img/Cocido_madrileño.jpg"
-                alt=""
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Cocido-400.avif 400w,
+                    img/img-width/Cocido-600.avif 600w,
+                    img/img-width/Cocido-800.avif 800w,
+                    img/img-width/Cocido-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Cocido.jpg"
+                  srcset="
+                    img/Cocido.jpg 400w,
+                    img/Cocido.jpg 600w,
+                    img/Cocido.jpg 800w,
+                    img/Cocido.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Cocido Madrileño"
+                >
+              </picture>
+
               <a href="det1.html"><strong>Cocido Madrileño</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
               <p>📍 Lugar: Madrid</p>
-              <p>🍽 Raciones: 6</p>
-            </li>
+              <p>🍽 Raciones: 8</p>
 
           </ul>
         </div>

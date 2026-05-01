@@ -8,6 +8,8 @@
       content="Recetas de la abuela: Explora la gastronomía española"
     />
     <title>Recetas de la abuela</title>
+
+    <link rel="icon" href="img/Logo_Web.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
 
     <link rel="stylesheet" href="/src/css/styles.css" />
@@ -19,11 +21,17 @@
       <div class="logo-title">
         <h1>Recetas de la abuela</h1>
         <a href="index.html">
-          <img
-            src="img/Logo_Web.png"
-            alt="Recetas de la abuela Inicio"
-            class="logo"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Logo_Web.webp 1x, 
+                            img/img-optimizadas/Logo_Web@2x.webp 2x"  
+                            type="image/webp">
+            <img
+              src="img/Logo_Web.png"
+              srcset="img/Logo_Web.png 1x, img/Logo_Web@2x.png 2x"
+              alt="Inicio - Recetas de la abuela"
+              class="logo"
+            />
+          </picture>
         </a>
       </div>
 
@@ -72,12 +80,35 @@
           <ul class="grid-cards">
 
             <li data-lugar="Valencia">
-              <img
-                src="img/Paella_valenciana.jpg"
-                alt=""
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Paella_valenciana-400.avif 400w,
+                    img/img-width/Paella_valenciana-600.avif 600w,
+                    img/img-width/Paella_valenciana-800.avif 800w,
+                    img/img-width/Paella_valenciana-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+
+                <img 
+                  src="img/Paella_valenciana.jpg"
+                  srcset="
+                    img/Paella_valenciana.jpg 400w,
+                    img/Paella_valenciana.jpg 600w,
+                    img/Paella_valenciana.jpg 800w,
+                    img/Paella_valenciana.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Paella Valenciana"
+                >
+              </picture>
               <a href="det2.html"><strong>Paella Valenciana</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
@@ -86,12 +117,35 @@
             </li>
 
             <li data-lugar="País Vasco">
-              <img
-                src="img/Marmitako.jpg"
-                alt="Marmitako"
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Marmitako-400.avif 400w,
+                    img/img-width/Marmitako-600.avif 600w,
+                    img/img-width/Marmitako-800.avif 800w,
+                    img/img-width/Marmitako-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+
+                <img 
+                  src="img/Marmitako.jpg"
+                  srcset="
+                    img/Marmitako.jpg 400w,
+                    img/Marmitako.jpg 600w,
+                    img/Marmitako.jpg 800w,
+                    img/Marmitako.jpg?width=1200 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Marmitako"
+                >
+              </picture>
               <a href="det1.html"><strong>Marmitako</strong></a>
               <p>⏰ Tiempo: 30m</p>
               <p>🎚 Dificultad: Facil</p>
@@ -100,12 +154,34 @@
             </li>
 
             <li data-lugar="Madrid">
-              <img
-                src="img/Cocido_madrileño.jpg"
-                alt=""
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Cocido-400.avif 400w,
+                    img/img-width/Cocido-600.avif 600w,
+                    img/img-width/Cocido-800.avif 800w,
+                    img/img-width/Cocido-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Cocido.jpg"
+                  srcset="
+                    img/Cocido.jpg 400w,
+                    img/Cocido.jpg 600w,
+                    img/Cocido.jpg 800w,
+                    img/Cocido.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Cocido Madrileño"
+                >
+              </picture>
               <a href="det1.html"><strong>Cocido Madrileño</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
@@ -114,12 +190,34 @@
             </li>
 
             <li data-lugar="Galicia">
-              <img
-                src="img/Pulpo_Gallega.jpg"
-                alt="Pulpo a la Gallega"
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Pulpo_Gallega-400.avif 400w,
+                    img/img-width/Pulpo_Gallega-600.avif 600w,
+                    img/img-width/Pulpo_Gallega-800.avif 800w,
+                    img/img-width/Pulpo_Gallega-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Pulpo_Gallega.jpg"
+                  srcset="
+                    img/Pulpo_Gallega.jpg 400w,
+                    img/Pulpo_Gallega.jpg 600w,
+                    img/Pulpo_Gallega.jpg 800w,
+                    img/Pulpo_Gallega.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Pulpo a la Gallega"
+                >
+              </picture>
               <a href="det2.html"><strong>Pulpo a la Gallega</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
@@ -128,12 +226,34 @@
             </li>
 
             <li data-lugar="Andalucía">
-              <img
-                src="img/Salmorejo.jpg"
-                alt="Salmorejo Cordobés"
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Salmorejo-400.avif 400w,
+                    img/img-width/Salmorejo-600.avif 600w,
+                    img/img-width/Salmorejo-800.avif 800w,
+                    img/img-width/Salmorejo-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Salmorejo.jpg"
+                  srcset="
+                    img/Salmorejo.jpg 400w,
+                    img/Salmorejo.jpg 600w,
+                    img/Salmorejo.jpg 800w,
+                    img/Salmorejo.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Salmorejo Cordobés"
+                >
+              </picture>
               <a href="det1.html"><strong>Salmorejo Cordobés</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
@@ -142,12 +262,34 @@
             </li>
 
             <li data-lugar="Castilla y León">
-              <img
-                src="img/Cordero_Asado.jpg"
-                alt="Cordero Asado"
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Cordero_Asado-400.avif 400w,
+                    img/img-width/Cordero_Asado-600.avif 600w,
+                    img/img-width/Cordero_Asado-800.avif 800w,
+                    img/img-width/Cordero_Asado-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Cordero_Asado.jpg"
+                  srcset="
+                    img/Cordero_Asado.jpg 400w,
+                    img/Cordero_Asado.jpg 600w,
+                    img/Cordero_Asado.jpg 800w,
+                    img/Cordero_Asado.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Cordero Asado"
+                >
+              </picture>
               <a href="det2.html"><strong>Cordero Asado</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
@@ -156,12 +298,34 @@
             </li>
 
             <li data-lugar="Cantabria">
-              <img
-                src="img/Quesada_Pasiega.jpg"
-                alt="Quesada Pasiega"
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Quesada_Pasiega-400.avif 400w,
+                    img/img-width/Quesada_Pasiega-600.avif 600w,
+                    img/img-width/Quesada_Pasiega-800.avif 800w,
+                    img/img-width/Quesada_Pasiega-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Quesada_Pasiega.jpg"
+                  srcset="
+                    img/Quesada_Pasiega.jpg 400w,
+                    img/Quesada_Pasiega.jpg 600w,
+                    img/Quesada_Pasiega.jpg 800w,
+                    img/Quesada_Pasiega.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Quesada Pasiega"
+                >
+              </picture>
               <a href="det1.html"><strong>Quesada Pasiega</strong></a>
               <p>⏰ Tiempo: 1h 25m</p>
               <p>🎚 Dificultad: Media</p>
@@ -170,12 +334,35 @@
             </li>
 
             <li data-lugar="Canarias">
-              <img
-                src="img/Papas_Arrugadas.jpg"
-                alt="Papas Arrugadas con Mojo"
-                width="256"
-                height="256"
-              />
+              
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Papas_Arrugadas-400.avif 400w,
+                    img/img-width/Papas_Arrugadas-600.avif 600w,
+                    img/img-width/Papas_Arrugadas-800.avif 800w,
+                    img/img-width/Papas_Arrugadas-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Papas_Arrugadas.jpg"
+                  srcset="
+                    img/Papas_Arrugadas.jpg 400w,
+                    img/Papas_Arrugadas.jpg 600w,
+                    img/Papas_Arrugadas.jpg 800w,
+                    img/Papas_Arrugadas.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Papas Arrugadas con Mojo"
+                >
+              </picture>
               <a href="det2.html"
                 ><strong>Papas Arrugadas con Mojo</strong></a
               >
@@ -186,12 +373,34 @@
             </li>
 
             <li data-lugar="Madrid">
-              <img
-                src="img/Huevos_Rotos.jpg"
-                alt="Huevos Rotos con Jamón"
-                width="256"
-                height="256"
-              />
+              <picture>
+                <source 
+                  srcset="
+                    img/img-width/Huevos_Rotos-400.avif 400w,
+                    img/img-width/Huevos_Rotos-600.avif 600w,
+                    img/img-width/Huevos_Rotos-800.avif 800w,
+                    img/img-width/Huevos_Rotos-1200.avif 1200w
+                  "
+                  type="image/avif"
+                >
+                <img 
+                  src="img/Huevos_Rotos.jpg"
+                  srcset="
+                    img/Huevos_Rotos.jpg 400w,
+                    img/Huevos_Rotos.jpg 600w,
+                    img/Huevos_Rotos.jpg 800w,
+                    img/Huevos_Rotos.jpg 1200w
+                  "
+                  sizes="
+                    (max-width: 425px) 315px,
+                    (max-width: 767px) 656px,
+                    (max-width: 1024px) 272px,
+                    (max-width: 1700px) 456px,
+                    800px
+                  "
+                  alt="Huevos Rotos con Jamón"
+                >
+              </picture>
               <a href="det2.html"
                 ><strong>Huevos Rotos con Jamón</strong></a
               >

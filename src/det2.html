@@ -8,6 +8,8 @@
       content="Recetas de la abuela: Explora la gastronomía española"
     />
     <title>Recetas de la abuela</title>
+
+    <link rel="icon" href="img/Logo_Web.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
 
     <link rel="stylesheet" href="/src/css/styles.css" />
@@ -19,11 +21,17 @@
       <div class="logo-title">
         <h1>Recetas de la abuela</h1>
         <a href="index.html">
-          <img
-            src="img/Logo_Web.png"
-            alt="Recetas de la abuela Inicio"
-            class="logo"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Logo_Web.webp 1x, 
+                            img/img-optimizadas/Logo_Web@2x.webp 2x" 
+                            type="image/webp">
+            <img
+              src="img/Logo_Web.png"
+              srcset="img/Logo_Web.png 1x, img/Logo_Web@2x.png 2x"
+              alt="Inicio - Recetas de la abuela"
+              class="logo"
+            />
+          </picture>
         </a>
       </div>
 
@@ -45,12 +53,30 @@
 
       <article class="receta-detalle container">
         <div class="receta-imagen-principal animate__animated animate__zoomIn">
-          <img
-            src="img/Paella_valenciana.jpg"
-            alt="Paella Valenciana"
-            width="400"
-            height="300"
-          />
+
+          <picture>
+
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                img/img-optimizadas/Paella_valenciana_movil.avif 1x
+              "
+              type="image/avif"
+            >
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/img-optimizadas/Paella_valenciana.avif 1x
+              "
+              type="image/avif"
+            >
+            
+            <img
+              src="img/Paella_valenciana.jpg"
+              alt="Paella Valenciana"
+            >
+          </picture>
         </div>
 
         <div class="receta-informacion">
@@ -127,45 +153,64 @@
             Con el sofrito listo se debe de añadir el agua. Las proporciones dependen mucho del fuego, del calor que haga, del grado de humedad y de lo grande que sea la paella, pero para comenzar, una buena proporción es la de añadir tres veces el volumen de agua que de arroz, aunque es la experiencia la que os hará ajustar y perfeccionar estas cantidades, que acabaréis haciendo a ojo, como hicieron la tía y la madre de mi novia, que eran las encargadas de esta paella (a pesar de que la tradición marca que sea el hombre de la casa el que la prepare).
           </p>
 
-          <img
-            src="img/Paella_1.png"
-            alt="Paella Valenciana"
-            width="400"
-            height="300"
-          />
-
+          <picture>
+            <source srcset="img/img-optimizadas/Paella_1.avif 1x, 
+                            img/img-optimizadas/Paella_1@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Paella_1.jpg"
+              srcset="img/Paella_1.jpg 1x, img/Paella_1@2x.jpg 2x"
+              alt="Paella Valenciana"
+              class="logo"
+            />
+          </picture>
+          
           <p>
            Echamos ahora algunos troncos más al fuego para que suba de potencia y se haga bien el caldo durante 25 o 30 minutos. Es un buen momento de echar el azafrán o, en su defecto, el sazonador de paella (el más popular es "el paellador), que lleva sal, ajo, colorante y un poco de azafrán.
           </p>
 
-          <img
-            src="img/Paella_2.png"
-            alt="Paella Valenciana"
-            width="400"
-            height="300"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Paella_2.avif 1x, 
+                            img/img-optimizadas/Paella_2@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Paella_2.jpg"
+              srcset="img/Paella_2.jpg 1x, img/Paella_2@2x.jpg 2x"
+              alt="Paella Valenciana"
+              class="logo"
+            />
+          </picture>
 
           <p>
            Luego añadimos el arroz "en caballete" (en diagonal) y lo distribuimos por la paella. Cocemos entre 17 y 20 minutos, aunque aquí el tiempo lo marca de nuevo el grano de arroz y la potencia del fuego, que debemos ir dejando consumirse. Tiene que quedar completamente seco y suelto. Mi recomendación para los primerizos es que tengáis un cazo con agua hirviendo al lado, por si hay que añadir agua. A mitad cocción también podemos poner unas ramitas de romero, que retiraremos antes de servir.
           </p>
 
-          <img
-            src="img/Paella_3.png"
-            alt="Paella Valenciana"
-            width="400"
-            height="300"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Paella_3.avif 1x, 
+                            img/img-optimizadas/Paella_3@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Paella_3.jpg"
+              srcset="img/Paella_3.jpg 1x, img/Paella_3@2x.jpg 2x"
+              alt="Paella Valenciana"
+              class="logo"
+            />
+          </picture>
           <p>
            Por último, conviene dejar la paella reposar unos minutos tapada con un gran paño o papel de periódico --no es bueno porque con la humedad se puede liberar algo de tinta, pero toda la vida lo he visto usar-- antes de servirla y recibir el aplauso de los presentes.
           </p>
 
-          
-          <img
-            src="img/Paella_4.png"
-            alt="Paella Valenciana"
-            width="400"
-            height="300"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Paella_4.avif 1x, 
+                            img/img-optimizadas/Paella_4@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Paella_4.jpg"
+              srcset="img/Paella_4.jpg 1x, img/Paella_4@2x.jpg 2x"
+              alt="Paella Valenciana"
+              class="logo"
+            />
+          </picture>
         </div>
 
         <div class="receta-video">

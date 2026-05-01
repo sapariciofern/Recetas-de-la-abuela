@@ -8,6 +8,8 @@
       content="Recetas de la abuela: Explora la gastronomía española"
     />
     <title>Recetas de la abuela</title>
+    
+    <link rel="icon" href="img/Logo_Web.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
 
     <link rel="stylesheet" href="/src/css/styles.css" />
@@ -19,11 +21,17 @@
       <div class="logo-title">
         <h1>Recetas de la abuela</h1>
         <a href="index.html">
-          <img
-            src="img/Logo_Web.png"
-            alt="Recetas de la abuela Inicio"
-            class="logo"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Logo_Web.webp 1x, 
+                            img/img-optimizadas/Logo_Web@2x.webp 2x"  
+                            type="image/webp">
+            <img
+              src="img/Logo_Web.png"
+              srcset="img/Logo_Web.png 1x, img/Logo_Web@2x.png 2x"
+              alt="Inicio - Recetas de la abuela"
+              class="logo"
+            />
+          </picture>
         </a>
       </div>
 

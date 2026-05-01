@@ -8,6 +8,8 @@
       content="Recetas de la abuela: Explora la gastronomía española"
     />
     <title>Recetas de la abuela</title>
+
+    <link rel="icon" href="img/Logo_Web.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
 
     <link rel="stylesheet" href="/src/css/styles.css" />
@@ -19,11 +21,17 @@
       <div class="logo-title">
         <h1>Recetas de la abuela</h1>
         <a href="index.html">
-          <img
-            src="img/Logo_Web.png"
-            alt="Recetas de la abuela Inicio"
-            class="logo"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Logo_Web.webp 1x, 
+                            img/img-optimizadas/Logo_Web@2x.webp 2x" 
+                            type="image/webp">
+            <img
+              src="img/Logo_Web.png"
+              srcset="img/Logo_Web.png 1x, img/Logo_Web@2x.png 2x"
+              alt="Inicio - Recetas de la abuela"
+              class="logo"
+            />
+          </picture>
         </a>
       </div>
 
@@ -45,12 +53,30 @@
 
       <article class="receta-detalle container">
         <div class="receta-imagen-principal animate__animated animate__zoomIn">
-          <img
-            src="img/Marmitako.jpg"
-            alt="Marmitako"
-            width="400"
-            height="300"
-          />
+
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                img/img-optimizadas/Marmitako_movil.avif 1x
+              "
+              type="image/avif"
+            >
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/img-optimizadas/Marmitako.avif 1x
+              "
+              type="image/avif"
+            >
+            
+            <img
+              src="img/Marmitako.jpg"
+              alt="Marmitako"
+            >
+          </picture>
+
         </div>
 
         <div class="receta-informacion">
@@ -135,12 +161,17 @@
             la guindilla y removemos bien.
           </p>
 
-          <img
-            src="img/Marmitako_1.jpg"
-            alt="Marmitako"
-            width="400"
-            height="300"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Marmitako_1.avif 1x, 
+                            img/img-optimizadas/Marmitako_1@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Marmitako_1.jpg"
+              srcset="img/Marmitako_1.jpg 1x, img/Marmitako_1@2x.jpg 2x"
+              alt="Marmitako"
+              class="logo"
+            />
+          </picture>
 
           <p>
             Añadimos el vino blanco, y dejamos que evapore el alcohol. Pelamos
@@ -151,12 +182,17 @@
             pellizco de sal.
           </p>
 
-          <img
-            src="img/Marmitako_2.jpg"
-            alt="Marmitako"
-            width="400"
-            height="300"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Marmitako_2.avif 1x, 
+                            img/img-optimizadas/Marmitako_2@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Marmitako_2.jpg"
+              srcset="img/Marmitako_2.jpg 1x, img/Marmitako_2@2x.jpg 2x"
+              alt="Marmitako"
+              class="logo"
+            />
+          </picture>
 
           <p>
             Subimos el gas a fuego fuerte e incorporamos el caldo, las hojas
@@ -168,12 +204,17 @@
             esta manera, las patatas permanecerán enteras.
           </p>
 
-          <img
-            src="img/Marmitako_3.jpg"
-            alt="Marmitako"
-            width="400"
-            height="300"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Marmitako_3.avif 1x, 
+                            img/img-optimizadas/Marmitako_3@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Marmitako_3.jpg"
+              srcset="img/Marmitako_3.jpg 1x, img/Marmitako_3@2x.jpg 2x"
+              alt="Marmitako"
+              class="logo"
+            />
+          </picture>
           <p>
             Dejamos a fuego lento durante unos treinta minutos, hasta que las
             patatas casi se deshagan, y aprovechamos ese tiempo para repasar
@@ -185,12 +226,17 @@
           </p>
 
           
-          <img
-            src="img/Marmitako_4.png"
-            alt="Marmitako"
-            width="400"
-            height="300"
-          />
+          <picture>
+            <source srcset="img/img-optimizadas/Marmitako_4.avif 1x, 
+                            img/img-optimizadas/Marmitako_4@2x.avif 2x" 
+                            type="image/avif">
+            <img
+              src="img/Marmitako_4.jpg"
+              srcset="img/Marmitako_4.jpg 1x, img/Marmitako_4@2x.jpg 2x"
+              alt="Marmitako"
+              class="logo"
+            />
+          </picture>
         </div>
 
         <div class="receta-video">

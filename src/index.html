@@ -12,7 +12,9 @@
     <link rel="icon" href="img/Logo_Web.svg" type="image/svg+xml">
     <link rel="icon" href="img/Logo_Web.png" type="image/png" />
 
-    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="preload" href="/src/css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/css/styles.css"></noscript>
+
     <script type="module" src="/src/js/app.js"></script>
   </head>
 
@@ -25,12 +27,12 @@
         <a href="index.html">
 
           <picture>
-            <source srcset="img/img-optimizadas/Logo_Web.webp 1x, 
-                            img/img-optimizadas/Logo_Web@2x.webp 2x" 
+            <source srcset="img/img-pageSpeed/Logo_Web.webp 1x, 
+                            img/img-pageSpeed/Logo_Web@2x.webp 2x" 
                             type="image/webp">
             <img
-              src="img/Logo_Web.png"
-              srcset="img/Logo_Web.png 1x, img/Logo_Web@2x.png 2x"
+              src="img/img-pageSpeed/Logo_Web.png"
+              srcset="img/img-pageSpeed/Logo_Web.png 1x, img/img-pageSpeed/Logo_Web@2x.png 2x"
               alt="Inicio - Recetas de la abuela"
               class="logo"
             />
@@ -51,7 +53,7 @@
     <main id="contenido" class="container">
 
       <!-- ⭐ BANNER CON CLIP-PATH -->
-      <section class="container-imagen banner">
+      <!--section class="container-imagen banner">
         <div class="banner-texto">
           <h2>Explora la gastronomía peninsular</h2>
           <p>Cultura y sabores únicos.</p>
@@ -59,7 +61,27 @@
             >Ver todas las recetas</a
           >
         </div>
+      </section-->
+
+      <section class="container-imagen banner">
+        <picture>
+          <source srcset="img/img-optimizadas/Mix_ingredientes.avif" type="image/avif">
+
+          <img 
+            src="img/Mix_ingredientes.jpg"
+            alt="Explora la gastronomía peninsular"
+            fetchpriority="high"
+            class="banner-img"
+          >
+        </picture>
+
+        <div class="banner-texto">
+          <h2>Explora la gastronomía peninsular</h2>
+          <p>Cultura y sabores únicos.</p>
+          <a href="categoria.html" class="boton-recetas">Ver todas las recetas</a>
+        </div>
       </section>
+
 
       <div class="svg-wrapper">
         <svg class="svg-vapor" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
@@ -111,7 +133,7 @@
                     (max-width: 767px) 656px,
                     (max-width: 1024px) 272px,
                     (max-width: 1700px) 456px,
-                    800px
+                    550px
                   "
                   alt="Paella Valenciana"
                   loading="lazy"
@@ -150,7 +172,7 @@
                     (max-width: 767px) 656px,
                     (max-width: 1024px) 272px,
                     (max-width: 1700px) 456px,
-                    800px
+                    550px
                   "
                   alt="Marmitako"
                   loading="lazy"
@@ -188,7 +210,7 @@
                     (max-width: 767px) 656px,
                     (max-width: 1024px) 272px,
                     (max-width: 1700px) 456px,
-                    800px
+                    550px
                   "
                   alt="Cocido Madrileño"
                   loading="lazy"

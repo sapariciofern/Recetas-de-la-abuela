@@ -12,7 +12,9 @@
     <link rel="icon" href="img/Logo_Web.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/Logo_Web.png" type="image/png" />
 
-    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="preload" href="/src/css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/css/styles.css"></noscript>
+
     <script type="module" src="/src/js/app.js"></script>
   </head>
 
@@ -22,12 +24,12 @@
         <h1>Recetas de la abuela</h1>
         <a href="index.html">
           <picture>
-            <source srcset="img/img-optimizadas/Logo_Web.webp 1x, 
-                            img/img-optimizadas/Logo_Web@2x.webp 2x"  
+            <source srcset="img/img-pageSpeed/Logo_Web.webp 1x, 
+                            img/img-pageSpeed/Logo_Web@2x.webp 2x" 
                             type="image/webp">
             <img
-              src="img/Logo_Web.png"
-              srcset="img/Logo_Web.png 1x, img/Logo_Web@2x.png 2x"
+              src="img/img-pageSpeed/Logo_Web.png"
+              srcset="img/img-pageSpeed/Logo_Web.png 1x, img/img-pageSpeed/Logo_Web@2x.png 2x"
               alt="Inicio - Recetas de la abuela"
               class="logo"
             />

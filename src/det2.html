@@ -77,27 +77,26 @@
             <img
               src="img/Paella_valenciana.jpg"
               alt="Paella Valenciana"
-              loading="lazy"
             >
           </picture>
         </div>
 
         <div class="receta-informacion">
-          <h4>Tiempo de preparación ⏰</h4>
+          <h3>Tiempo de preparación ⏰</h3>
           <p>1 hora y 25 minutos</p>
 
-          <h4>Raciones 🍽️</h4>
+          <h3>Raciones 🍽️</h3>
           <p>12 personas</p>
 
-          <h4>Dificultad 🕒</h4>
+          <h3>Dificultad 🕒</h3>
           <p>Media</p>
 
-          <h4>Lugar de origen 📍</h4>
+          <h3>Lugar de origen 📍</h3>
           <p>Valencia, España</p>
         </div>
 
         <div class="receta-informacion">
-          <h4 id="personas-originales">Ingredientes para 12 personas</h4>
+          <h4 id="personas-originales">Ingredientes para 12 personas</h3>
           <ul id="ingredientes-originales">
             <li data-cantidad="1500" data-tipo="g">Arroz bomba — 1500 g</li>
             <li data-cantidad="1" data-tipo="unidad">Pollo de corral — 1</li>
@@ -134,11 +133,11 @@
           <h4 id="mensaje-personas" class="mensaje-personas">
             El número de personas seleccionado es el mismo que el de la receta
             original.
-          </h4>
+          </h3>
 
           <h4 id="ingredientes-recalculados" class="ingredientes-recalculados">
             Ingredientes recalculados
-          </h4>
+          </h3>
 
           <ul id="ingredientes-calculados"></ul>
 
@@ -146,7 +145,7 @@
         </div>
 
         <div class="receta-preparacion">
-          <h4>Preparación</h4>
+          <h3>Preparación</h3>
 
           <p>
             Toda paella que se precie comienza por un buen sofrito. En una paella cuanto más grande mejor, se sofríe en abundante aceite el pollo, el conejo, las judías, las alcachofas y los caracoles (la que veis en la foto no tiene garrofó porque no es temporada y el congelado no es igual), sazonando con un poco de sal y pimentón hacia el final. Cuando esté bien dorado se añade el tomate triturado y se rehoga.
@@ -166,6 +165,8 @@
               alt="Paella Valenciana"
               class="logo"
               loading="lazy"
+              width="345"
+              height="230"
             />
           </picture>
           
@@ -183,6 +184,8 @@
               alt="Paella Valenciana"
               class="logo"
               loading="lazy"
+              width="345"
+              height="230"
             />
           </picture>
 
@@ -200,6 +203,8 @@
               alt="Paella Valenciana"
               class="logo"
               loading="lazy"
+              width="345"
+              height="230"
             />
           </picture>
           <p>
@@ -216,18 +221,27 @@
               alt="Paella Valenciana"
               class="logo"
               loading="lazy"
+              width="345"
+              height="230"
             />
           </picture>
         </div>
 
         <div class="receta-video">
-          <h4>Video de la elaboración</h4>
+          <h3>Video de la elaboración</h3>
 
-          <div class="video">
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6YK4DLewG-8?si=Tr8yYP1BcSLjOICO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+          <div class="video youtube-lazy" data-id="6YK4DLewG-8">
+            <div class="youtube-thumb">
+              <img 
+                src="https://img.youtube.com/vi/6YK4DLewG-8/hqdefault.jpg" 
+                alt="Vídeo de YouTube"
+                width="560"
+                height="315"
+              >
+              <button class="youtube-play">▶</button>
+            </div>
           </div>
+
         </div>
       </article>
     </main>

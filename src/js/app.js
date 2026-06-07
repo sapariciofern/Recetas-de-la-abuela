@@ -115,3 +115,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+document.querySelectorAll('.youtube-lazy').forEach(el => {
+  el.addEventListener('click', () => {
+    const id = el.dataset.id;
+    el.innerHTML = `
+      <iframe 
+        src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        width="560"
+        height="315">
+      </iframe>
+    `;
+  });
+});

@@ -52,23 +52,34 @@
 
     <main id="contenido" class="container">
 
-      <!-- ⭐ BANNER CON CLIP-PATH -->
-      <!--section class="container-imagen banner">
-        <div class="banner-texto">
-          <h2>Explora la gastronomía peninsular</h2>
-          <p>Cultura y sabores únicos.</p>
-          <a href="categoria.html" class="boton-recetas"
-            >Ver todas las recetas</a
-          >
-        </div>
-      </section-->
-
       <section class="container-imagen banner">
         <picture>
-          <source srcset="img/img-optimizadas/Mix_ingredientes.avif" type="image/avif">
+          
+          <source 
+            srcset="
+              img/img-width/Mix_ingredientes-400.avif 400w,
+              img/img-width/Mix_ingredientes-600.avif 600w,
+              img/img-width/Mix_ingredientes-800.avif 800w,
+              img/img-width/Mix_ingredientes-1200.avif 1200w
+            "
+            type="image/avif"
+          >
 
-          <img 
+          <img
             src="img/Mix_ingredientes.jpg"
+            srcset="
+              img/Mix_ingredientes.jpg 400w,
+              img/Mix_ingredientes.jpg 600w,
+              img/Mix_ingredientes.jpg 800w,
+              img/Mix_ingredientes.jpg 1200w
+            "
+            sizes="
+              (max-width: 425px) 315px,
+              (max-width: 767px) 656px,
+              (max-width: 1024px) 272px,
+              (max-width: 1700px) 456px,
+              550px
+            "
             alt="Explora la gastronomía peninsular"
             fetchpriority="high"
             class="banner-img"
